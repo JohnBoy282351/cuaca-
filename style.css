@@ -1,1 +1,181 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Web Pantauan Perubahan Suhu Harian</title>
 
+  <style>
+    /* ===== RESET ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    /* ===== BODY ===== */
+    body {
+      background: #f2f6fa;
+      color: #333;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    /* ===== TITLE ===== */
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #444;
+    }
+
+    /* ===== TABLE ===== */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    table th {
+      background: #4a6cf7;
+      color: white;
+      padding: 12px;
+      text-transform: capitalize;
+    }
+
+    table td {
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    table tr:nth-child(even) {
+      background: #eef1ff;
+    }
+
+    table tr:hover {
+      background: #dce3ff;
+      transition: 0.2s;
+    }
+
+    /* ===== IFRAME MAP ===== */
+    iframe {
+      border-radius: 10px;
+      margin: 10px 0;
+      width: 100%;
+      max-width: 600px;
+      height: 300px;
+      border: 1px solid black;
+    }
+
+    small {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      margin-top: 30px;
+      padding: 15px;
+      text-align: center;
+      background: #e9ecf5;
+      border-radius: 10px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    /* Link styling */
+    a {
+      color: #4a6cf7;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Kondisi Cuaca Daerah Batam</h2>
+  <hr>
+  <h4>Lokasi</h4>
+  <p>Daerah Batam</p>
+
+  <iframe
+    src="https://www.openstreetmap.org/export/embed.html?bbox=103.47198486328126%2C0.3488137632611333%2C104.5513916015625%2C1.3209889104538992&amp;layer=mapnik">
+  </iframe>
+  <small><a href="https://www.openstreetmap.org/?#map=9/0.835/104.012">Lihat peta lebih besar</a></small>
+  <small><a href="https://maps.app.goo.gl/cfjCXVuvUmgx3xLPA?g_st=awb">Lihat peta yang lebih besar</a></small>
+
+  <table>
+    <tr>
+      <th>No</th>
+      <th>Hari</th>
+      <th>Tanggal</th>
+      <th>Suhu (°C)</th>
+      <th>Kelembaban %</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Senin</td>
+      <td>1-12-2025</td>
+      <td>30-25</td>
+      <td>78-90</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Selasa</td>
+      <td>2-12-2025</td>
+      <td>24-29</td>
+      <td>75-88</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Rabu</td>
+      <td>3-12-2025</td>
+      <td>25-25</td>
+      <td>72-85</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Kamis</td>
+      <td>4-12-2025</td>
+      <td>27-25</td>
+      <td>70-84</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Jumat</td>
+      <td>5-12-2025</td>
+      <td>29-25</td>
+      <td>73-88</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Sabtu</td>
+      <td>6-12-2025</td>
+      <td>30-25</td>
+      <td>75-90</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Minggu</td>
+      <td>7-12-2025</td>
+      <td>29-30</td>
+      <td>77-89</td>
+    </tr>
+  </table>
+
+  <footer>
+    <p>Dibuat oleh: © John Boy</p>
+  </footer>
+
+</body>
+</html>
